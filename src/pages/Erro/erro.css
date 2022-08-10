@@ -1,0 +1,28 @@
+.notFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.bottom{
+    background-color: blueviolet;
+    display: flex;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 30px;
+    border-radius: 3px;
+    padding: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.bottom:hover{
+    background-color: white;
+    color: blueviolet;
+    border: 1px solid;
+    transition: 0.8;
+    opacity: 80%;
+}

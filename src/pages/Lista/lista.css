@@ -1,0 +1,70 @@
+.meusFilmes{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+}
+
+.meusFilmes h1{
+    margin-bottom: 20px;
+}
+
+.meusFilmes span{
+    font-size: 18px;
+}
+
+.meusFilmes ul{
+    width: 60%;
+}
+
+.meusFilmes ul li{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.meusFilmes div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.meusFilmes div a{
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    margin-right: 5px;
+    background-color: blueviolet;
+    padding: 10px;
+    border: 1px solid rgb(174, 205, 252);
+    border-radius: 4px;
+}
+
+.meusFilmes div a:hover{
+    color: blueviolet;
+    border: 1px solid rgb(174, 205, 252);
+    background-color: white;
+}
+
+.meusFilmes div button{
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+    background-color: red;
+    padding: 10px;
+    border: 1px solid rgb(174, 205, 252);;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.meusFilmes div button:hover{
+    color: red;
+    border: 1px solid rgb(174, 205, 252);
+    background-color: white;
+}

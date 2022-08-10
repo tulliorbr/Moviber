@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.listaFilmes{
+    margin-top: 40px;
+    align-items: center;
+    margin: 0 auto;
+    margin: 14px auto;
+    display: flex;
+}
+
+.listaFilmes article{
+    width: 100%;
+    min-width: 455px;
+    padding: 15px;
+    border-radius: 4px;
+}
+
+.listaFilmes img{
+    width: 100%;
+    max-width: 900px;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius:8px ;
+    border-top-right-radius: 8px;
+}
+
+.listaFilmes strong{
+    margin-bottom: 14px;
+    text-align: center;
+    font-size: 20px;
+    display: block;
+    object-fit: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.listaFilmes a{
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 0;
+    font-size: 24px;
+    background-color: blueviolet;
+    text-decoration: none;
+    color: white;
+    border-bottom-left-radius:8px ;
+    border-bottom-right-radius: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.loading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
