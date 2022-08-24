@@ -1,5 +1,5 @@
 .filme-info {
-    color:blueviolet;
+    color:#733b74;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -7,11 +7,38 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e9fefd;
+    width: 600px;
+    border-radius: 5px;
+    margin-left: 15px;
+    justify-content: space-around;
+}
+
+.rating{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.imgAndDescription{
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgAndDescription img{
+    margin-left: 35px;
+}
+
 .filme-info img{
     width: 100%;
     max-width: 900px;
-    border-radius: 4px;
+    border-radius: 5px;
     object-fit: cover;
+    border: 3px solid white;
 }
 
 .filme-info h1{
@@ -23,11 +50,10 @@
 }
 
 .filme-info h3{
-    margin-top: 10px;
     font-weight: bold;
 }
 
-.filme-info span{
+.filme-info p{
     padding-left: 80px;
     padding-right: 80px;
     text-align: center;
@@ -42,8 +68,8 @@
 
 .area-button button{
     margin-right: 10px;
-    color: blueviolet;
-    background-color: white;
+    color: white;
+    background-color: #733b74;
     border: 1px solid;
     border-radius: 5px;
     padding: 10px;
@@ -52,19 +78,22 @@
 
 .area-button a{
     text-decoration: none;
-    background-color: white;
-    color:blueviolet;
+    background-color: #733b74;
+    color:white;
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 13px;
 }
 
 .area-button a:hover{
     text-decoration: none;
-    color: white;
-    background-color: blueviolet;
+    color: #733b74;
+    background-color: white;
     transition: 0.6;
 }
 
 .area-button button:hover{
-    background-color: blueviolet;
-    color: white;
+    background-color: white;
+    color: #733b74;
     transition: 0.6;
 }

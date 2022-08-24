@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import api from '../../../services/api';
 import './style.css'
 import { FaSearch } from "react-icons/fa"
+import logo from './logo.jpeg'
 
 function Header() {
     const [query, setQuery] = useState('')
     const [movies, setMovies] = useState([])
+    const navigate = useNavigate()
 
     async function getMovie(query){
         const res = await api.get("search/movie",{
@@ -20,6 +22,11 @@ function Header() {
         setMovies(res.data.results)
     }
 
+    const navAndRefresh = () => {
+        navigate('/')
+        window.location.reload();
+    }
+
     useEffect(() => {
         if(query){
             getMovie(query)
@@ -31,30 +38,32 @@ function Header() {
     
     return(
         <header>
-            <div className='logo'>
-                <Link className='linkLogo' to='/'>Moviber</Link>
+            <Link to='/home' className='linkLogo'>
+                <img src={logo} alt='logo'/>
+            </Link>
+            <div className='centerButtons'>
+                <Link className='buttonHome' to='/home'>Home</Link>
+                <Link className='buttonList' to='/lista'>Minha lista</Link>
+                <button onClick={() => navAndRefresh()} className='buttonDiscover'>Discover</button>
             </div>
-            <div className='menuRight'>
-                <section className='menuSearch'>
-                    <article className='localSearch'>
-                        <FaSearch style={{color: 'white', fontSize: '20px'}}/>
-                        <input type='text' className='inputSearch' placeholder='Procure pelo seu filme aqui' onChange={ (e) => setQuery(e.target.value)} />      
-                    </article>          
-                    <ul className='returnSearch'>
-                        {
-                            movies && (
-                                movies.map(movie => (
-                                    <li className='resultSearch'>
-                                        <a href={`/filme/${movie.id}`} alt='Redirecionamento para página de descrição do filme'>{movie.title}</a>
-                                        <hr/>
-                                    </li>
-                                ))
-                            )
-                        }
-                    </ul>
-                </section>
-                <Link className='lista' to='/lista'>Minha lista</Link>
-            </div>
+            <section className='menuSearch'>
+                <article className='localSearch'>
+                    <FaSearch style={{color: 'white', fontSize: '20px', marginRight: '10px'}}/>
+                    <input type='text' className='inputSearch' placeholder='Procure pelo seu filme aqui' onChange={ (e) => setQuery(e.target.value)} />      
+                </article>          
+                <ul className='returnSearch'>
+                    {
+                        movies && (
+                            movies.map(movie => (
+                                <li className='resultSearch'>
+                                    <a href={`/filme/${movie.id}`} alt='Redirecionamento para página de descrição do filme'>{movie.title}</a>
+                                    <hr/>
+                                </li>
+                            ))
+                        )
+                    }
+                </ul>
+            </section>
         </header>
     );
 }

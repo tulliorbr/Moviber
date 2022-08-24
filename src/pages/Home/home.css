@@ -18,9 +18,10 @@
 }
 
 .listaFilmes img{
-    width: 100%;
-    max-width: 900px;
+    height: 650px;
+    width: 650px;
     display: block;
+    position: relative;
     align-items: center;
     justify-content: center;
     border-top-left-radius:8px ;
@@ -44,12 +45,18 @@
     justify-content: center;
     padding: 10px 0;
     font-size: 24px;
-    background-color: blueviolet;
+    background-color: #733b74;
     text-decoration: none;
     color: white;
     border-bottom-left-radius:8px ;
     border-bottom-right-radius: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.listaFilmes a:hover{
+    background-color: white;
+    color: #733b74;
+    border: 1px solid;
 }
 
 .loading{

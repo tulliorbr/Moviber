@@ -8,7 +8,7 @@
 }
 
 .bottom{
-    background-color: blueviolet;
+    background-color: #753871;
     display: flex;
     text-decoration: none;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -21,7 +21,7 @@
 
 .bottom:hover{
     background-color: white;
-    color: blueviolet;
+    color:  #753871;
     border: 1px solid;
     transition: 0.8;
     opacity: 80%;
