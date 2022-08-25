@@ -15,11 +15,11 @@ export default function Discover(){
         <div className="bothSides">
             <div className="rigthSide">
                 <img src={logo} alt='logo'/>
-                <span>Desenvolvido por Tullio Rauber.</span>
+                <span>Desenvolvido por Tullio Rauber. 2022.</span>
             </div>
             <div className="leftSide">
                 <strong>MOVIBER</strong>
-                <div>Moviber é um projeto de catálogo de filmes em cartaz, com busca habilitada para busca de qualquer filme simples em React.JS criado para exploração de recursos do React como Hooks, bibliotecas como "react-router-dom", "react-toastify" e "tailwind", fazendo consumo de API com axios.</div>
+                <div>Moviber é um projeto de catálogo de filmes em cartaz e referente aos filmes atualmente mais populares, com busca habilitada para busca de qualquer filme. Sendo um projeto simples em React.JS criado para exploração de recursos do React como Hooks, bibliotecas como "react-router-dom", "react-toastify" e "tailwind", fazendo consumo de API com axios.</div>
                 <button onClick={() => navAndRefresh()}>Ir para o projeto</button>
             </div>
         </div>
